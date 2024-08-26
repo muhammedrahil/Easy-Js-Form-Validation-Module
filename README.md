@@ -1,5 +1,28 @@
-# Js-Form-Validation
-js module for form validation
+# Easy-Js-Form-Validation
+
+Js-Form-Validation is a lightweight JavaScript module designed to streamline and enhance form validation in your web applications. It provides a simple, yet powerful way to validate form fields such as emails, phone numbers, and general text inputs. This module offers customizable error message displays with options for adding custom styles and classes, making it easy to integrate into any project.
+
+
+## Features
+
+- Email Validation: Checks if the input matches a standard email format and allows you to set custom minimum and maximum length requirements.
+  
+- Phone Number Validation: Validates phone numbers against a regex pattern and provides customizable length restrictions.
+  
+- General Field Validation: Ensures that required fields are filled and within specified length constraints.
+  
+- Customizable Error Messages: Display error messages with custom styles, classes, and positioning.
+  
+- Direct Style Application: Apply styles directly to error messages or through CSS classes.
+  
+- Flexible Configuration: Supports both required and optional fields with different validation rules.
+  
+- Error Clearing: Automatically clears previous error messages before validating the form.
+  
+- Easy Integration: Simple to integrate with any form, just pass in the form ID and error message configurations.
+
+- Event Handling: Trigger form validation on form submission, and prevent submission if validation fails.
+
 
 ```javascript
 class ErrorMessageDisplay {
@@ -126,7 +149,9 @@ class ErrorMessageDisplay {
 ```
 
 
-### Usage
+## Usage
+
+Here’s an example of how you can use Js-Form-Validation in your project:
 
 ```javascript
 $('#{{form_id}}').on('submit', async function (event) {
@@ -154,3 +179,12 @@ $('#{{form_id}}').on('submit', async function (event) {
 });
 
 ```
+
+
+In this example:
+
+- Field Validation: You can define multiple fields to be validated, each with its own validation type and error message.
+
+- Customization: Apply custom styles or CSS classes to error messages for better UI integration.
+
+- Direct Style Application: You can choose to style error messages directly using the `direct_style` option.
